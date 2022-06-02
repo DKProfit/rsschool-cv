@@ -26,7 +26,7 @@ function multiply(a, b){
 
 ### Work Experience:
 * System Administrator at the Institute of Geology KomiSC UB RAS
-* Learning JS - [CV example](https://github.com/DKProfit/rsschool-cv/blob/gh-pages/cv.md)
+* Learning JS - [CV example](https://dkprofit.github.io/rsschool-cv/cv)
 
 ### Education:
 * Komi State Pedagogical Institute
