@@ -1,2 +1,2 @@
 # rsschool-cv
-[My CV](https://dkprofit.github.io/rsschool-cv/cv)
+https://DKProfit.github.io/rsschool-cv/
