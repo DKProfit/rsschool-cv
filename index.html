@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,15 +38,17 @@
       </header>
       <main>
         <div class="foto-name">
-          <section class="column column-left">
+          <div class="column column-left">
             <figure class="img-foto">
               <img src="./assets/img/avatar.png" alt="Avatar" />
             </figure>
-          </section>
-          <section class="column column-right">
-            <h1>Dmitry Komlev</h1>
-            <p class="profi">Junior front-end developer</p>
-          </section>
+          </div>
+          <div class="column column-right">
+            <section class="section">
+              <h1 class="title">Dmitry<br>Komlev</h1>
+              <p class="profi">Junior front-end developer</p>
+            </section>
+          </div>
         </div>
         <div class="main-container"> 
           <div class="column column-left">
@@ -69,8 +71,22 @@
                 <li>Windows OS, Linux</li>
               </ul>
             </section>
+            <section class="section bg-edu" id="education">
+              <h2 class="subtitle">Education</h2>
+              <ul>
+                <li>Komi State Pedagogical Institute</li>
+                <li>English A1</li>
+              </ul>         
+            </section>
           </div>
           <div class="column column-right">
+            <section class="section" id="profile">
+              <h2 class="subtitle" id="about">About</h2>
+              <p class="paragraphe">
+                I want to change my profession and become a developer. I am currently taking a course on JS/Front-End at RS
+                School.
+              </p>
+            </section>
             <section class="section bg-pro" id="projects">
               <h2 class="subtitle">Projects</h2>
               <ul>
@@ -84,37 +100,23 @@
                 </li>
               </ul>
             </section>
+            <!-- <section class="section bg-code" id="code">
+              <h2 class="subtitle">Code Example</h2>
+              <pre>
+       function multiply(a, b){
+                    return a * b;
+                }
+              </pre>
+            </section> -->
+            <section class="section bg-work" id="work">
+              <h2 class="subtitle">Work Experience</h2>
+              <p class="paragraphe">System Administrator at the Institute of Geology KomiSC UB RAS</p>
+            </section>
           </div>
-          <section class="section" id="profile">
-            <h2 class="subtitle" id="about">About</h2>
-            <p class="paragraphe">
-              I want to change my profession and become a developer. I am currently taking a course on JS/Front-End at RS
-              School.
-            </p>
-          </section>
-          <section class="section bg-code" id="code">
-            <h2 class="subtitle">Code Example</h2>
-            <pre>
-     function multiply(a, b){
-                  return a * b;
-              }
-            </pre>
-          </section>
-          <section class="section bg-edu" id="education">
-            <h2 class="subtitle">Education</h2>
-            <ul>
-              <li>Komi State Pedagogical Institute</li>
-              <li>English A1</li>
-            </ul>         
-          </section>
-          <section class="section bg-work" id="work">
-            <h2 class="subtitle">Work Experience</h2>
-            <p class="paragraphe">System Administrator at the Institute of Geology KomiSC UB RAS</p>
-          </section>
         </div>
       </main>
       <footer>
-        <div class="container footer-cont">
+        <div class="footer-container">
           <span>&copy; 2022 <a href="https://github.com/DKProfit" target="_blank">DKProfit GitHub</a></span>
           <a href="https://rs.school/js/" target="_blank"><img src="https://rs.school/images/rs_school_js.svg" alt="rsschool" /></a>
         </div>

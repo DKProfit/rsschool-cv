@@ -9,10 +9,10 @@ html {
   margin: 0 auto;
   max-width: 1200px;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  min-height: 100%;
-  /* margin: 0; */
+  font-size: 16px;  
+  margin: 0 auto;
   padding: 0;
+  min-height: 100%;
   /* display: flex;
   flex-direction: column;
   justify-content: space-between; */
@@ -41,35 +41,50 @@ html {
 .nav-item a:hover {
   color: #fd2549;
 }
+@media (max-width: 640px) {
+  .nav-menu {
+    display: none;
+  }
+}
 /* --- Block Foto & Name */
 section {
   border: #fd2549 solid 1px;
 }
 .foto-name {
-  display: flex;    
-  flex-wrap: wrap;
-  width: 100%;
+  display: flex;
 }
 .column {
-  margin: 0   auto;  
+  /* margin: 0   auto;     */  
 }
 .column-left {
  width: 30%; 
+ /* min-width: 300px; */
+ background-color: lightgray;
+ /* min-width: 300px;  */
 }
 .column-right {
   width: 70%;
 }
-@media (max-width: 768px) {
+@media (max-width: 640px) {  
+  .foto-name {
+    flex-direction: column;
+  }
   .column-left, .column-right {
     width: 100%;
   }
+  .foto-name > .column-right {
+    background-color: lightgray;
+    text-align: center;
+  }  
 }
-h1 {
-  font-size: 3rem;
-  margin: 0.5em 0 0.1em 0;
+.section {
+  margin: 10px 20px;
+}
+.title {
+  font-size: 2rem;
+  margin: 2em 0 0.1em 0;
   text-transform: uppercase;
-  letter-spacing: 5px;
-  width: 400px;
+  letter-spacing: 5px;  
 }
 .profi {
   padding-top: 10px;
@@ -77,12 +92,57 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 5px;  
 }
-.img-foto {
-  width: 200px;  
+.img-foto {   
+  margin: 0;
+  text-align: center;  
+  height: min-content;
+  /* height: 400px; */
+  width: 100%;
+}
+.img-foto img {
+  width: 100%;
+  object-fit: cover;
 }
 /* --- Block Info*/
 .main-container {
   display: flex;
+}
+@media (max-width: 640px) {
+  .title {
+    margin: 0.1em 0 0.1em 0;
+  }
+  .main-container {
+    flex-direction: column;
+  }
+  .section {
+    margin: 0;
+  }
+}
+.subtitle {
+
+}
+
+
+
+/* --- Block Footer */
+.footer-container {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.footer-container a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.5s;
+  font-weight: 500;
+}
+.footer-container a:hover {
+  color: #fd2549;
+}
+.footer-container img {
+  width: 120px;
 }
 
 /* body {
