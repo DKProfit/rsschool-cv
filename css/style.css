@@ -4,7 +4,88 @@
 html {
   scroll-behavior: smooth;
 }
-body {
+
+.page {
+  margin: 0 auto;
+  max-width: 1200px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  min-height: 100%;
+  /* margin: 0; */
+  padding: 0;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+/* --- Header menu */
+.header-block {
+  background-color: lightseagreen;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0 auto;
+}
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  transition: 0.3s;
+}
+.nav-item a {
+  color: #d5fdda;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.nav-item a:hover {
+  color: #fd2549;
+}
+/* --- Block Foto & Name */
+section {
+  border: #fd2549 solid 1px;
+}
+.foto-name {
+  display: flex;    
+  flex-wrap: wrap;
+  width: 100%;
+}
+.column {
+  margin: 0   auto;  
+}
+.column-left {
+ width: 30%; 
+}
+.column-right {
+  width: 70%;
+}
+@media (max-width: 768px) {
+  .column-left, .column-right {
+    width: 100%;
+  }
+}
+h1 {
+  font-size: 3rem;
+  margin: 0.5em 0 0.1em 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  width: 400px;
+}
+.profi {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;  
+}
+.img-foto {
+  width: 200px;  
+}
+/* --- Block Info*/
+.main-container {
+  display: flex;
+}
+
+/* body {
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
   margin: 0;
@@ -173,3 +254,5 @@ h1 {
 .bg-pro a:hover {
   color: #fd2549;
 }
+*/
+
