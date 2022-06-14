@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet"/>
+    <title>CV D.Komlev</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header-block">
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="foto-name">
+          <div class="column column-left">
+            <figure class="img-foto">
+              <img src="./assets/img/avatar.png" alt="Avatar" />
+            </figure>
+          </div>
+          <div class="column column-right">
+            <section class="section">
+              <h1 class="title">Dmitry<br>Komlev</h1>
+              <p class="profi">Junior front-end developer</p>
+            </section>
+          </div>
+        </div>
+        <div class="main-container"> 
+          <div class="column column-left">
+            <section class="section section-contacts" id="contacts">
+              <h2 class="subtitle">Contacts</h2>              
+              <ul class="contacts-list">
+                <li><span class="contacts-item">Email: </span></li>
+                <li><a href="mailto:dakpro80@gmail.com">dakpro80@gmail.com</a></li>                            
+                <li><span class="contacts-item">Discord: </span></li>
+                <li>Dart#0019</li>                                
+                <li><span class="contacts-item">Telegram: </span></li>
+                <li><a href="https://t.me/DKprofit">DKProfit</a></li>                
+              </ul>              
+            </section>
+            <section class="section section-skills" id="skills">
+              <h2 class="subtitle">Skills</h2>
+              <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>System administration</li>
+                <li>Windows OS, Linux</li>                
+              </ul>
+              <br>
+            </section>            
+            <section class="section section-education" id="education">
+              <h2 class="subtitle">Education</h2>              
+                <p>Komi State Pedagogical Institute</p>
+                <p>Faculty of Physics and Computer Science</p> 
+                <br>
+                <p>Russian Native</p>
+                <p>English A1 (I started studying)</p>    
+                <br>          
+            </section>
+          </div>
+          <div class="column column-right">
+            <section class="section" id="about">
+              <h2 class="subtitle">About</h2>
+              <p class="paragraphe"> I want to change my profession and become a developer. I am currently taking a course on JS/Front-End at RS School. I am a teacher by profession, but I worked only in the field of IT.</p>
+              <p>I really like to read, just a bookworm.</p>
+            </section>
+            <section class="section bg-pro" id="projects">
+              <h2 class="subtitle">Projects</h2>
+              <ul>
+                <li>
+                  Пример резюме на Markdown -
+                  <a href="https://dkprofit.github.io/rsschool-cv/cv" target="_blank">CV1</a>
+                </li>
+                <li>
+                  Пример резюме на HTML & CSS -
+                  <a href="https://dkprofit.github.io/rsschool-cv/" target="_blank">CV2</a>
+                </li>
+              </ul>
+            </section>
+            <section class="section bg-code" id="code">
+              <h2 class="subtitle">Code Example</h2>
+              <pre>
+                <code>
+       function multiply(a, b){
+                    return a * b;
+                }
+              </code>
+              </pre>
+            </section>
+            <section class="section bg-work" id="work">
+              <h2 class="subtitle">Work Experience</h2>
+              <p class="paragraphe">System Administrator at the Institute of Geology KomiSC UB RAS</p>
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-container">
+          <span>&copy; 2022 <a href="https://github.com/DKProfit" target="_blank">My GitHub</a></span>
+          <a href="https://rs.school/js/" target="_blank"><img src="https://rs.school/images/rs_school_js.svg" alt="rsschool" /></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
