@@ -19,7 +19,7 @@ html {
 }
 /* --- Header menu */
 .header-block {
-  background-color: lightseagreen;
+  background-color: #000000cb;;
 }
 .nav-menu {
   display: flex;
@@ -47,9 +47,6 @@ html {
   }
 }
 /* --- Block Foto & Name */
-section {
-  border: #fd2549 solid 1px;
-}
 .foto-name {
   display: flex;
 }
@@ -59,7 +56,7 @@ section {
 .column-left {
  width: 30%; 
  /* min-width: 300px; */
- background-color: lightgray;
+ background-color: rgb(218, 218, 218);
  /* min-width: 300px;  */
 }
 .column-right {
@@ -73,18 +70,26 @@ section {
     width: 100%;
   }
   .foto-name > .column-right {
-    background-color: lightgray;
+    background-color: rgb(218, 218, 218);
     text-align: center;
   }  
 }
 .section {
-  margin: 10px 20px;
+  margin: 0;
+  /* border: #fd2549 solid 1px; */
+  line-height: 30px;  
+}
+.section ul, .section p {
+  margin: 0;  
+  padding-left: 30px;
 }
 .title {
   font-size: 2rem;
   margin: 2em 0 0.1em 0;
   text-transform: uppercase;
-  letter-spacing: 5px;  
+  letter-spacing: 5px;
+  line-height: 50px;
+  padding-left: 30px;
 }
 .profi {
   padding-top: 10px;
@@ -110,30 +115,37 @@ section {
 @media (max-width: 640px) {
   .title {
     margin: 0.1em 0 0.1em 0;
+    padding: 0;
   }
   .main-container {
     flex-direction: column;
   }
-  .section {
-    margin: 0;
-  }
 }
 .subtitle {
-
+  background-color: #000000cb;
+  color: #d5fdda;
+  padding-left: 30px;  
+}
+.contacts-list, .skills-list {
+  list-style: none;
+}
+.contacts-item {
+  font-weight: 500;
 }
 
 
 
 /* --- Block Footer */
 .footer-container {
-  background-color: aqua;
+  background-color: #000000cb;;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  color: #d5fdda;
 }
 .footer-container a {
-  color: #000000;
+  color: #d5fdda;
   text-decoration: none;
   transition: color 0.5s;
   font-weight: 500;
